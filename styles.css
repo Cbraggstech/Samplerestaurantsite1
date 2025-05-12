@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-image: url("backgroundimage.jpg");
+    /*background-image: url("backgroundimage.jpg");*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -26,13 +26,13 @@ img {
 }
 
 nav {
-	background-color: #571C11;
+	/*background-color: #571C11;*/
 }
 
 .backgimg {
 	width: 100vw;
 	height: 100vh;
-	filter: brightness(25%) sepia(50%);
+	filter: brightness(40%);
 }
 
 .sidenav {
@@ -42,23 +42,27 @@ nav {
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background-color: #E8BC91;
+	background-color: #111;
 	overflow-x: hidden;
+	transition: 0.3s;
+	/* Add padding if needed */
+	/*background-color: #E8BC91;*/
+	overflow: hidden;
 	padding-top: 60px;
-	transition: 0.5s;
+	transition: 0.3s;
 }
 
-.menu-list a {
+.sidenav .menu-list a {
 	padding: 8px 8px 8px 32px;
 	text-decoration: none;
 	font-size: 25px;
-	color: #151515;
+	color: #571C11;
 	display: block;
 	transition: 0.3s;
 }
 
-.meu-list a:hover {
-	color: #571C11;
+.menu-list a:hover {
+	color: #F9C07A;
 }
 
 .sidenav .closebtn {
@@ -72,11 +76,6 @@ nav {
 @media screen and (max-height: 450px) {
 	.sidenav {padding-top: 15px;}
 	.menu-list a {font-size: 18px;}
-}
-
-.hambrgr-container {
-	width: 35px;
-	height: 20px;
 }
 
 .hambrgr-btn {
