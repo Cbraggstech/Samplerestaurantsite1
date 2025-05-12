@@ -4,7 +4,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: auto;
+    height: 100vh;
+	width: 100vw;
 }
 
 .event-banner {
@@ -17,4 +18,67 @@ body {
     padding-top: 7px;
     padding-bottom: 4px;
     font-family: Montserrat, sans-serif;
+}
+
+img {
+	width: 300px;
+	height: 200px;
+}
+
+.backgimg {
+	width: 100vw;
+	height: 100vh;
+	filter: brightness(25%) sepia(50%);
+}
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #E8BC91;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+}
+
+.menu-list a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #151515;
+	display: block;
+	transition: 0.3s;
+}
+
+.meu-list a:hover {
+	color: #571C11;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.menu-list a {font-size: 18px;}
+}
+
+.hambrgr-container {
+	width: 35px;
+	height: 20px;
+}
+
+.hambrgr-btn {
+  width: 35px;
+  max-width: 35px;
+  height: 5px;
+  background-color: #F9C07A;
+  margin: 6px 0;
 }
