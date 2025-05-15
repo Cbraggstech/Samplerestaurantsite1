@@ -146,7 +146,7 @@ header {
 	scrollbar-color: #3d3d3d #111111;
 }
 
-.sidenav .menu-list a {
+/*.sidenav*/ .menu-list a {
 	padding: 8px 8px 8px 32px;
 	text-decoration: none;
 	font-size: 25px;
@@ -231,4 +231,8 @@ header {
 
 .dropdown a:hover {
 	color: #F9C07A;
+}
+
+.menu-list .menu-page {
+  font-size: 16px;
 }
