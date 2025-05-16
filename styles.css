@@ -284,7 +284,7 @@ header {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url("images/footerbackg.jpg");
+  background-image: url("images/footerbackg2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -452,6 +452,7 @@ form input::placeholder {
   font-size: 14px;
   color: #F6F5F2;
   width: 100%;
+  height: auto;
   font-family: Lato, sans-serif;
   background-color: #E8BC91;
 }
