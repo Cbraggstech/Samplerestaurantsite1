@@ -288,7 +288,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter:  opacity(80%) blur(10px) sepia(25%); /* Adjust blur as needed */
+  filter:  opacity(80%) blur(10px) sepia(25%) brightness(50%) ; /* Adjust blur as needed */
   z-index: 0;
   inset: 0;
 }
