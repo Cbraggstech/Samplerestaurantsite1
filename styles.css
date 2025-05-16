@@ -433,3 +433,45 @@ form input::placeholder {
   display: flex;
 }
 
+.footer-socials-container a {
+  text-decoration: none;
+  color: #F6F5F2;
+  font-size: 28px;
+  margin: 0 40px;
+}
+
+.footer-socials-container a:hover {
+  color: #F9C07A;
+}
+
+.footer-legal-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 14px;
+  color: #F6F5F2;
+  width: 100%;
+  font-family: Lato, sans-serif;
+  background-color: #E8BC91;
+}
+  
+.footer-legal {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: bold;
+}
+
+.footer-legal p {
+  font-size: 16px;
+}
+
+.footer-legal a {
+  text-decoration: none;
+  color: #F6F5F2;
+  font-size: 14px;
+}
