@@ -256,7 +256,7 @@ header {
   color: #F9C07A;
   height: 100vh;
   width: 100%;
-  color: white;
+  color: #F6F5F2;
 }
 
 .footer-location-container {
@@ -396,6 +396,7 @@ form input::placeholder {
   color: #571C11;
   font-family: Lato, sans-serif;
   font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 .flc-icon {
@@ -476,3 +477,150 @@ form input::placeholder {
   color: #F6F5F2;
   font-size: 14px;
 }
+
+.menu-header-container {
+  height: 30vh;
+  width: 100%;
+  position: relative;
+}
+
+.menu-header-container::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url("images/menus1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  filter: brightness(50%) opacity(80%);
+}
+
+.menu-header-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.menu-header-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: #F6F5F2; /* Or any color that contrasts with the photo */
+  font-size: 3rem; /* Adjust as needed */
+  text-align: center;
+  z-index: 2;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds a shadow for better readability */
+  /* ...add font-family, font-weight, etc. as needed... */
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  position: relative;
+  color: #F6F5F2;
+}
+
+.apps-menu-container {
+  width: 100%;
+  height: 100%;
+  /*background-color: #f3ddc3;*/
+    background-color: #eec797;
+  margin: 0;
+  padding: 0;
+}
+
+.apps-menu-container p {
+  padding: 0;
+  margin: 0;
+}
+
+/*.apps-menu-container h1,
+.apps-menu-container h2,
+.apps-menu-container h3,
+.apps-menu-container p {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}*/
+
+.apps-menu {
+  text-decoration: none;
+  color: #F6F5F2;
+  font-weight: bolder;
+  padding-top: 40px;
+}
+
+.menu-title {
+  color: #EC7B01;
+  font-size: 32px;
+  font-weight: bolder;
+  font-family: Lato, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.apps-menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.menu-title-divider {
+  width: 80%;
+  height: 1px;
+  background-color: #F6F5F2;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.apps-menu-nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+}
+
+.apps-menu-nav a {
+  text-decoration: none;
+  color: #F6F5F2;
+  font-weight: bolder;
+  font-size: 22px;
+  font-family: Lato, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.footer-nav-divider {
+  width: 2px;
+  height: 20px;
+  background-color: #EC7B01;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.menu-cat-div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu-item-title {
+  color: #EC7B01;
+  font-size: 20px;
+}
+
