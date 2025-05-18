@@ -478,7 +478,7 @@ form input::placeholder {
   font-size: 14px;
 }
 
-.menu-header-container, .menu-header-container-sushi, .menu-header-container-sashimi, .menu-header-container-tempura, .menu-header-container-udon, .menu-header-container-lunch, .menu-header-container-dinner {
+.menu-header-container, .menu-header-container-sushi, .menu-header-container-sashimi, .menu-header-container-tempura, .menu-header-container-udon, .menu-header-container-lunch, .menu-header-container-dinner, .menu-header-container-drinks {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -564,6 +564,18 @@ form input::placeholder {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   background-image: url("images/menus7.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  filter: brightness(50%) opacity(80%);
+}
+
+.menu-header-container-drinks::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url("images/menus8.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
