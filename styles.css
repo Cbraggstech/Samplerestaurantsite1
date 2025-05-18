@@ -478,7 +478,10 @@ form input::placeholder {
   font-size: 14px;
 }
 
-.menu-header-container {
+.menu-header-container, .menu-header-container-sushi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 30vh;
   width: 100%;
   position: relative;
@@ -489,6 +492,18 @@ form input::placeholder {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   background-image: url("images/menus1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  filter: brightness(50%) opacity(80%);
+}
+
+.menu-header-container-sushi::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url("images/menus2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -586,7 +601,7 @@ h1 {
 
 .apps-menu-nav {
   display: flex;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   align-items: center;
   justify-content: center;
   gap: 0; /* Let margin on divider handle spacing */
