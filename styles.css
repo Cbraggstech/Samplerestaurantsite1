@@ -799,3 +799,8 @@ h1 {
   margin: 0;
   padding: 0;
 }
+
+.about-hero-img {
+  width: 50%;
+  height: auto;
+}
