@@ -254,7 +254,7 @@ header {
   align-items: center;
   background-color: #571C11;
   color: #F9C07A;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   color: #F6F5F2;
 }
@@ -266,7 +266,7 @@ header {
   align-items: space-evenly;
   align-content: center;
   width: 100%;
-  height: 50%;
+  height: auto;
   font-family: Lato, sans-serif;
   font-weight: 700;
   color: #E8BC91;
@@ -297,6 +297,7 @@ header {
   position: relative;
   z-index: 1;
   margin-top: 40px;
+  margin-bottom: 80px;
 }
 
 .footer-location-container a {
@@ -374,11 +375,13 @@ form input::placeholder {
 }
 
 .footer-socials-container {
-  height: 10%;
+  height: auto;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 13px;
+  padding-bottom: 10px;
 
 }
 
@@ -702,9 +705,11 @@ h1 {
   justify-content: center;
   gap: 0; /* Let margin on divider handle spacing */
   width: 50%;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   padding: 0;
+  height: auto; /* Ensure sufficient height */
+  overflow: visible; /* Prevent clipping */
 }
 
 .apps-menu-nav a {
@@ -720,11 +725,14 @@ h1 {
 
 .footer-nav-divider {
   display: inline-block;
-  width: 3px;
-  height: 24px;
-  background-color: #e7ae74; /* or any color you want */
+  width: 3px; /* Ensure this is visible */
+  height: 24px; /* Ensure this is visible */
+  background-color: #EC7B01; /* Ensure this contrasts with the background */
   margin: 0 10px;
   vertical-align: middle;
+  /*outline: 1px solid red; /* Debug: Add a red outline to check visibility */
+  padding-left: 1x;
+  padding-right: 1px;
 }
 
 .menu-cat-div {
