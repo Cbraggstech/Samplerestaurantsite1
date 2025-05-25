@@ -25,7 +25,11 @@ document.addEventListener('click', function(event) {
 
 // Slideshow logic-------------------------------------------------
 let slideIndex = 1;
-showSlides(slideIndex);
+
+// Initialize the slideshow when the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+  showSlides(slideIndex);
+});
 
 // Next/previous controls
 function plusSlides(n) {
@@ -36,6 +40,7 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
+
 
 function showSlides(n) {
   let i;
