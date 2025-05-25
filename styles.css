@@ -989,3 +989,34 @@ h1 {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+.contact-body {
+ /*background-image: url("images/contactus.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;*/
+}
+
+.contact-us-container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("images/contactus.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(100%) opacity(100%) sepia(70%);
+}
+
+.contact-us-container::before {
+  background-color: #571C11;
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 0;
+  filter: opacity(70%);
+}
+
+.contact-us-main p {
+  padding: 0;
+  margin: 0;
+}
