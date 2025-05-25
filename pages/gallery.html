@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="gallery-body">
 
 <div class="event-banner">Join Us For Happy Hour Everyday 4-7PM</div>
 <header>
@@ -81,6 +81,42 @@
 
         </div>
     </section>
+
+    <!--Slideshow Container-->
+    <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="../images/foodphoto1.jpg">
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="../images/foodphoto2.jpg">
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="../images/foodphoto3.jpg">
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="../images/foodphoto4.jpg">
+        </div>
+
+        <!--Next and Previous Buttons-->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align: center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
 
     <footer>
 

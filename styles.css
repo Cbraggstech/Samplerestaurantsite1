@@ -873,3 +873,7 @@ h1 {
   font-family: Lato, sans-serif;
   text-align: left;
 }
+
+.gallery-body {
+  background-color: #571C11;
+}
