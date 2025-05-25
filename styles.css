@@ -997,26 +997,118 @@ h1 {
   background-repeat: no-repeat;*/
 }
 
-.contact-us-container {
+.contact-us-container2 {
   height: 100vh;
   width: 100vw;
   background-image: url("images/contactus.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: brightness(100%) opacity(100%) sepia(70%);
+  filter: brightness(100%) opacity(100%);
 }
 
-.contact-us-container::before {
-  background-color: #571C11;
+.contact-us-container2::before {
+  background-color: #eec797;
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  z-index: 0;
-  filter: opacity(70%);
+  z-index: -1;
+  filter: opacity(80%);
 }
 
-.contact-us-main p {
+.contact-us-main2 p {
   padding: 0;
   margin: 0;
+}
+
+.contact-content-container2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.contact-text-content2 {
+  width: 40%;
+  height: auto;
+  color: #F6F5F2;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.contact-us-title2 {
+  font-size: 32px;
+  color: #EC7B01;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.contact-form-container2 {
+  background-color: #F6F5F2;
+  height: auto;
+  width: 600px;
+  padding: 30px;
+  border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.contact-form-container2 form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact-form-container2 label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #571C11;
+}
+
+.contact-form-container2 input[type="text"], 
+.contact-form-container2 input[type="email"], 
+.contact-form-container2 textarea, .contact-form-container2 input[type="tel"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #E8BC91;
+  border-radius: 8px;
+  background-color: white;
+  color: #571C11;
+  font-family: Lato, sans-serif;
+}
+
+.contact-form-container2 textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.contact-form-container2 button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #EC7B01;
+  color: #F6F5F2;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form-container2 button[type="submit"]:hover {
+  background-color: #d26e00;
+}
+
+.form-title {
+  color: #571C11;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
 }
