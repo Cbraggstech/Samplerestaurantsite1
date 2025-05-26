@@ -1112,3 +1112,9 @@ box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   font-family: Lato, sans-serif;
   font-weight: bold;
 }
+
+.contact-form2 input::placeholder, .contact-form2 textarea::placeholder {
+  color: #EC7B01;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+}
