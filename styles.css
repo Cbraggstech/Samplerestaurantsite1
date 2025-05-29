@@ -1203,3 +1203,21 @@ h1 {
   color: #E8BC91;
   border: 2px solid #bba7a3;
 }
+
+.reservations-body {
+  background-image : url(../images/reservationsbgimage.jpg);
+  filter: brightness(50%) opacity(50%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.reservations-body::before {
+  background-color: #F6F5F2;
+  filter: brightness(50%) opacity(50%);
+}
+
+.reservations-main {
+  width: 100%;
+  height: 100vh;
+}
