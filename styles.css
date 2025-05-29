@@ -1124,7 +1124,7 @@ h1 {
   background-color: #E8BC91;
   font-family: Lato, sans-serif;
   background: #F6F5F2;
-background: radial-gradient(circle, rgba(246, 245, 242, 1) 0%, rgba(232, 188, 145, 1) 50%, rgba(246, 245, 242, 1) 100%);
+  background: radial-gradient(circle, rgba(246, 245, 242, 1) 0%, rgba(232, 188, 145, 1) 50%, rgba(246, 245, 242, 1) 100%);
 }
 
 .locations-header {
@@ -1149,7 +1149,7 @@ background: radial-gradient(circle, rgba(246, 245, 242, 1) 0%, rgba(232, 188, 14
 .location-card {
   background-color: #F6F5F2;
   border-radius: 20px;
-  width: 20%;
+  width: 25%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -1158,9 +1158,25 @@ background: radial-gradient(circle, rgba(246, 245, 242, 1) 0%, rgba(232, 188, 14
   padding: 20px;
   /*box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;*/
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  color: #571C11;
+  border: 5px solid #F9C07A;
 }
 
-.location-card a {
+.locations-header h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 32px;
+}
+
+.circle {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      /* Add other styling as desired */
+      overflow: hidden; /* This may be needed to ensure the image fits */
+      border: 2px solid #F9C07A;
+    }
+
+.location-card-button {
   background-color: #E8BC91;
   width: 160px;
   height: 40px;
@@ -1177,7 +1193,13 @@ background: radial-gradient(circle, rgba(246, 245, 242, 1) 0%, rgba(232, 188, 14
   transition: background-color 0.3s, color 0.3s;
 }
 
-.location-card a:hover {
+.location-card-phone {
+  text-decoration: none;
+  color: #BBA7A3;
+}
+
+.location-card-button:hover {
   background-color: #571C11;
   color: #E8BC91;
+  border: 2px solid #bba7a3;
 }
