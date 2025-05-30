@@ -1258,8 +1258,25 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
-  height: auto;
+  width: 60%;
+  height: 60%;
   font-family: Lato, sans-serif;
   text-align: center;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  color: #3d3d3d;
+}
+
+.reservations-title {
+  font-size: 32px;
+  color: #E8BC91;
+  font-weight: bolder;
+  text-decoration: underline;
+  text-decoration-color: #F6F5F2;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.reservations-main-text {
+  color: #F6F5F2;
 }
