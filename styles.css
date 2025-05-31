@@ -1235,11 +1235,11 @@ h1 {
   align-items: center;
   height: 100%;
   width: 100%;
-  background-color: rgba(246, 245, 242, 0.5); /* Semi-transparent background */
+  /*background-color: rgba(246, 245, 242, 0.5); /* Semi-transparent background */*/
 }
 
 .reservation-form {
-  background-color: #F6F5F2;
+  /*background-color: #F6F5F2;*/
   width: 500px;
   height: auto;
   padding: 30px;
@@ -1247,6 +1247,7 @@ h1 {
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   font-family: Lato, sans-serif;
   color: #3d3d3d;
+  border: 2px solid #F6F5F2;
 }
 
 .reservation-form input[type="text"], .reservation-form input[type="email"],
@@ -1254,8 +1255,9 @@ h1 {
   width: 70%;
   background-color: #F9C07A;
   background-color: #EC7B01;
+  background-color: #F6F5F2;
   border: 3px solid #571C11;
-  color: #F6F5F2;
+  color: #571C11;
   font-family: Lato, sans-serif;
 }
 
@@ -1271,14 +1273,16 @@ h1 {
 
 .reservation-form button[type="submit"] {
   background-color: #571C11;
-  color: #EC7B01;
+  color: #F6F5F2;
   cursor: pointer;
   font-weight: bold;
   width: 70%;
 }
 
 .reservation-form input[type=date], .reservation-form input[type=time] {
-  color: #F6f5F2;
+  color: #EC7B01;
+  color-scheme: light;
+  padding-right: 10px;
 }
 
 .reservation-form button[type="submit"]:hover {
@@ -1287,7 +1291,7 @@ h1 {
 }
 
 .reservation-form input::placeholder {
-  color: #F6F5F2;
+  color: #EC7B01;
   font-family: Lato, sans-serif;
   font-weight: bold;
 }
@@ -1303,7 +1307,7 @@ h1 {
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   color: #3d3d3d;
-  background-color: #EC7B01;
+  /*background-color: ;*/
   border: 2px solid #F6F5F2;
 }
 
@@ -1327,4 +1331,13 @@ h1 {
   font-size: 16px;
   line-height: 1.0;
   text-align: center;
+  width: 40%;
+  color: #571C11;
+  color: #F6F5F2;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+}
+
+.reservations-main-text {
+  font-weight: bold;
 }
