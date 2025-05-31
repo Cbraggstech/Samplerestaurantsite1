@@ -58,4 +58,3 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 // End slideshow logic-----------------------------------------------
-
