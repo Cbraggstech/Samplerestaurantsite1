@@ -100,9 +100,7 @@
     </div>
     </div>
 </main>
-<button type="button" class="scroll-up-btn">
-    <i class="arrow-up"></i>
-</button>
+
 <footer>
 
     <div class="footer-container">
@@ -178,6 +176,20 @@
 
     </div>
 </footer>
+
+<button type="button" class="scroll-up-btn">
+    <i class="arrow-up"></i>
+</button>
+
+<script>
+    const btn = document.querySelector(".scroll-up-btn");
+    btn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
 
 </body>
 
