@@ -1369,14 +1369,51 @@ h1 {
   pointer-events: none;
 }
 
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #F9C07A;
+}
+
+.reviews-text-section {
+  text-align: center;
+  font-family: Lato, sans-serif;
+  padding: 20px;
+}
+
+.reviews-text-section h2 {
+  font-size: 32px;
+  color: #F6F5F2;
+  font-weight: bolder;
+  text-decoration: underline;
+  text-decoration-color: #EC7B01;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.reviews-text-section p {
+  font-size: 14px;
+  color: #F6F5F2;
+}
+
 /*Carousel styling*/
 @import url(https://fonts.bunny.net/css?family=abel:400);
+
+.carousel-container {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 120px;
+
+}
 
 .carousel-section {
   display: grid;
   place-items: center;
   padding: 2rem 1rem;
-  font-family: "Abel", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .carousel-section .carousel {
@@ -1435,8 +1472,9 @@ h1 {
   border: 1px solid rgba(0, 0, 0, 0.25);
   padding-block-end: 1rem;
   border-radius: 10px;
-  background: white;
+  background: #571C11;
   color: rgb(49, 65, 88);
+  color: #F6F5F2;
   will-change: transform;
   animation-name: carousel-marquee;
   animation-duration: var(--carousel-duration);
@@ -1458,13 +1496,17 @@ h1 {
 
 .carousel-section .carousel img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
 
 .carousel-section .carousel > article > *:not(img) {
   padding: 0 1rem;
+}
+
+.carousel-container article h2 {
+  color: #F9C07A;
 }
 
 .carousel-section .carousel > article > div {
@@ -1476,13 +1518,14 @@ h1 {
 
 .carousel-section .carousel > article h2 {
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: bold;
   padding-block: 0.75rem 0.25rem;
   margin: 0;
 }
 
 .carousel-section .carousel > article p {
   margin: 0;
+  line-height: 2.0;
 }
 
 .carousel-section .carousel > article a {
