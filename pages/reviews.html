@@ -63,6 +63,59 @@
     </div>
     <img class="nav-logo" src="../images/Tempura-Oki Logo1st.png">
 </header>
+<!--Beginning of carousel-->
+<div class="carousel-section">
+<div class="carousel" mask>
+	<article>
+		<img src="../images/5star.jpg" alt="5 star rating">
+		<h2>The Cross</h2>
+		<div>
+			<p>The Cross is a central symbol of Easter, representing the crucifixion of Jesus Christ and his sacrifice for humanity. It serves as a reminder of suffering, love, and redemption, and is often displayed during Holy Week and Easter Sunday to honor the foundation of Christian faith.</p>
+		</div>
+	</article>
+
+	<article>
+		<img src="../images/5star.jpg" alt="5 star rating">
+		<h2>Easter Eggs</h2>
+		<div>
+			<p>Easter eggs are a colorful symbol of new life and rebirth, often decorated and hidden for festive hunts. The tradition comes from ancient spring rituals and was later adopted into Easter celebrations to represent the resurrection.</p>
+		</div>
+	</article>
+
+	<article>
+		<img src="../images/5star.jpg" alt="5 star rating">
+		<h2>Hot Cross Buns</h2>
+		<div>
+			<p>Hot cross buns are sweet, spiced buns marked with a cross on top, traditionally eaten on Good Friday. They originated in England and symbolize the crucifixion, with the cross representing Jesus and the spices recalling burial traditions.</p>
+		</div>
+	</article>
+
+	<article>
+		<img src="../images/5star.jpg" alt="5 star rating">
+		<h2>Easter Chick</h2>
+		<div>
+			<p>Easter chicks are a cheerful symbol of new life and beginnings, often seen alongside eggs in spring decorations. They represent birth and renewal, tying into the themes of Easter and the arrival of spring.</p>
+		</div>
+	</article>
+
+	<article>
+		<img src="../images/5star.jpg" alt="5 star rating">
+		<h2>Easter Bunnies</h2>
+		<div>
+			<p>Easter bunnies are a popular symbol of spring and new life, often seen delivering colorful eggs to children.</p>
+		</div>
+	</article>
+
+	<article>
+		<img src="../images/5star.jpg" alt="5 star rating">
+		<h2>Crown of Thorns</h2>
+		<div>
+			<p>The Crown of Thorns symbolizes the suffering of Jesus before his crucifixion. It represents the pain he endured for humanity’s salvation and is a reminder of his sacrifice during Easter.</p>
+		</div>
+	</article>
+</div>
+</div>
+<!--End of carousel-->
 
     <section class="testimonials">
         <blockquote class="testimonial1">
@@ -90,6 +143,95 @@
             <img class="rating" src="../images/5star.jpg">
         </blockquote>
     </section>
+<footer>
+
+    <div class="footer-container">
+    <div class="footer-location-container">
+
+        <div class="footer-location">
+            <div class="flc-icon-container">
+            <img class="flc-icon" src="../images/locationicon.png" id="flc-location">
+        </div>
+        <div class="flc-text-container">
+            <p class="footer-p-title">Location</p>
+            <p><a href="https://www.google.com/maps/place/2100+E+7th+St,+Chicago,+IL+60611" target="_blank">2100 E 7th St, Chicago, IL<br> 60611</a></p>
+            </div>
+        </div>
+
+        <div class="footer-contact">
+            <div class="flc-icon-container">
+                <img class="flc-icon" src="../images/contacticon.png">
+            </div>
+            <div class="flc-text-container">
+                <p class="footer-p-title">Contact Us</p>
+                <p>Email: <a href="mailto:info@tempura-oki.com">info@tempura-oki.com</a></p>
+                <p>Phone: <a href="tel:3125551234">(312)&#8209;555&#8209;1234</a></p>
+            </div>
+        </div>
+
+        <div class="footer-hours">
+            <div class="flc-icon-container">
+            <img class="flc-icon" src="../images/hoursicon.png" id="flc-hours">
+            </div>
+            <div class="flc-text-container">
+            <p class="footer-p-title">Hours</p>
+            <p>Monday: 11:00 AM - 10:00 PM</p>
+            <p>Tuesday: 11:00 AM - 10:00 PM</p>
+            <p>Wednesday: 11:00 AM - 10:00 PM</p>
+            <p>Thursday: 11:00 AM - 10:00 PM</p>
+            <p>Friday: 11:00 AM - 10:00 PM</p>
+            <p>Saturday: 12:00 PM - 11:00 PM</p>
+            <p>Sunday: 12:00 PM - 9:00 PM</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-subscribe-container">
+        <div class="subscribe-section">
+        <p class="subscribe-title">Hear About It First!</p>
+        <p class="subscribe-text">Stay connected with Tempura-Oki by subscribing to our newsletter! As a subscriber, you'll receive exclusive updates on our latest menu items, special promotions, and upcoming events delivered straight to your inbox. Be the first to know about seasonal offerings and members-only deals. We value your privacy and promise to only send you the tastiest news—sign up today and join our foodie community!</p>
+        </div>
+        <form>
+            <input type="text" placeholder="Your name" required>
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+
+    <div class="footer-socials-container">
+        <div class="footer-socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-yelp"></i></a>
+        </div>
+    </div>
+
+    <div class="footer-legal-container">
+        <div class="footer-legal">
+            <p class="copyright">&copy; 2025 Tempura-Oki Restaurant. All Rights Reserved.</p>
+            <a href="terms.html">Terms of Service</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+    </div>
+
+    </div>
+</footer>
+
+<button type="button" class="scroll-up-btn">
+    <i class="arrow-up"></i>
+</button>
+
+<script>
+    const btn = document.querySelector(".scroll-up-btn");
+    btn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
 
 </body>
 

@@ -1368,3 +1368,148 @@ h1 {
   margin-bottom: -14px;
   pointer-events: none;
 }
+
+/*Carousel styling*/
+@import url(https://fonts.bunny.net/css?family=abel:400);
+
+.carousel-section {
+  display: grid;
+  place-items: center;
+  padding: 2rem 1rem;
+  font-family: "Abel", sans-serif;
+}
+
+.carousel-section .carousel {
+  --items: 6;
+  --carousel-duration: 40s;
+  --carousel-width: min(80vw, 1200px);
+  --carousel-item-width: 280px;
+  --carousel-item-height: 450px;
+  --carousel-item-gap: 2rem;
+  --clr-cta: rgb(0, 132, 209);
+
+  position: relative;
+  width: var(--carousel-width);
+  height: var(--carousel-item-height);
+  overflow: clip;
+}
+
+@media (width > 600px) {
+  .carousel-section .carousel {
+    --carousel-duration: 30s;
+  }
+}
+
+.carousel-section .carousel[mask] {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10% 90%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10% 90%,
+    transparent
+  );
+}
+
+.carousel-section .carousel[reverse] > article {
+  animation-direction: reverse;
+}
+
+.carousel-section .carousel:hover > article {
+  animation-play-state: paused;
+}
+
+.carousel-section .carousel > article {
+  position: absolute;
+  top: 0;
+  left: calc(100% + var(--carousel-item-gap));
+  width: var(--carousel-item-width);
+  height: var(--carousel-item-height);
+  display: grid;
+  grid-template-rows: 200px auto 1fr auto;
+  gap: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  padding-block-end: 1rem;
+  border-radius: 10px;
+  background: white;
+  color: rgb(49, 65, 88);
+  will-change: transform;
+  animation-name: carousel-marquee;
+  animation-duration: var(--carousel-duration);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: calc(
+    var(--carousel-duration) / var(--items) * 1 * var(--i) * -1
+  );
+}
+
+.carousel-section .carousel > article:nth-child(1) { --i: 0; }
+.carousel-section .carousel > article:nth-child(2) { --i: 1; }
+.carousel-section .carousel > article:nth-child(3) { --i: 2; }
+.carousel-section .carousel > article:nth-child(4) { --i: 3; }
+.carousel-section .carousel > article:nth-child(5) { --i: 4; }
+.carousel-section .carousel > article:nth-child(6) { --i: 5; }
+.carousel-section .carousel > article:nth-child(7) { --i: 6; }
+.carousel-section .carousel > article:nth-child(8) { --i: 7; }
+
+.carousel-section .carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.carousel-section .carousel > article > *:not(img) {
+  padding: 0 1rem;
+}
+
+.carousel-section .carousel > article > div {
+  grid-row: span 2;
+  display: grid;
+  grid-template-rows: subgrid;
+  font-size: 0.8rem;
+}
+
+.carousel-section .carousel > article h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding-block: 0.75rem 0.25rem;
+  margin: 0;
+}
+
+.carousel-section .carousel > article p {
+  margin: 0;
+}
+
+.carousel-section .carousel > article a {
+  text-decoration: none;
+  text-transform: lowercase;
+  border: 1px solid var(--clr-cta);
+  color: var(--clr-cta);
+  border-radius: 3px;
+  padding: 0.25rem 0.5rem;
+  place-self: start;
+  transition: 150ms ease-in-out;
+}
+
+.carousel-section .carousel > article a:hover,
+.carousel-section .carousel > article a:focus-visible {
+  background-color: var(--clr-cta);
+  color: white;
+  outline: none;
+}
+
+@keyframes carousel-marquee {
+  100% {
+    transform: translateX(
+      calc(
+        (var(--items) * (var(--carousel-item-width) + var(--carousel-item-gap))) *
+          -1
+      )
+    );
+  }
+}
