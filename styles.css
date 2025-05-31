@@ -1245,20 +1245,51 @@ h1 {
   padding: 30px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  font-family: Lato, sans-serif;
+  color: #3d3d3d;
 }
 
 .reservation-form input[type="text"], .reservation-form input[type="email"],
-.reservation-form input[type="tel"], .reservation-form button[type="submit"] {
+.reservation-form input[type="tel"], .reservation-form button[type="submit"], .reservation-form input[type=date], .reservation-form input[type=time], .reservation-form input[type="number"] {
   width: 70%;
   background-color: #F9C07A;
   border: 3px solid #3d3d3d;
+  color: #F6F5F2;
+}
+
+.reservation-form button[type="submit"], .reservation-form input[type=date], .reservation-form input[type=time], .reservation-form input[type="number"] {
+  margin-bottom: 20px;
+}
+
+.reservation-form input[type=date], .reservation-form input[type=time], .reservation-form input[type="number"] {
+  border-radius: 25px;
+  height: 40px;
+}
+
+.reservation-form button[type="submit"] {
+  background-color: #3d3d3d;
+  color: #F9C07A;
+  cursor: pointer;
+  font-weight: bold;
+  width: 70%;
+}
+
+.reservation-form button[type="submit"]:hover {
+  background-color: #F9C07A;
+  color: #3d3d3d;
+}
+
+.reservation-form input::placeholder {
+  color: #3d3d3d;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
 }
 
 .reservations-divider-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 60%;
+  width: 80%;
   height: 60%;
   font-family: Lato, sans-serif;
   text-align: center;
@@ -1279,4 +1310,12 @@ h1 {
 
 .reservations-main-text {
   color: #F6F5F2;
+}
+
+.reservations-info {
+  margin-top: 20px;
+  color: #F6F5F2;
+  font-size: 16px;
+  line-height: 1.0;
+  text-align: center;
 }
