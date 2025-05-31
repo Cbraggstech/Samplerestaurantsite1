@@ -1274,6 +1274,10 @@ h1 {
   width: 70%;
 }
 
+.reservation-form input[type=date], .reservation-form input[type=time] {
+  color: #3d3d3d;
+}
+
 .reservation-form button[type="submit"]:hover {
   background-color: #F9C07A;
   color: #3d3d3d;
@@ -1296,6 +1300,8 @@ h1 {
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   color: #3d3d3d;
+  background: #EC7B01;
+  background: linear-gradient(90deg, rgba(236, 123, 1, 1) 0%, rgba(246, 245, 242, 1) 100%);
 }
 
 .reservations-title {
