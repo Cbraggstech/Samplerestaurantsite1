@@ -387,7 +387,7 @@ form button[type="submit"] {
 }
 
 form input::placeholder {
-  color: #F6F5F2;
+  color: rgba(128, 128, 128, 0.5); /* Gray with 30% opacity */
 
 }
 
@@ -1622,7 +1622,97 @@ h1 {
         font-size: 14px;
     }
 
-}
+    .footer-location, .footer-contact, .footer-hours {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-location-container {
+      width: 100%;  
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flc-icon-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #flc-hours {
+      margin-right: 0;
+    }
+
+    .footer-location-container > * {
+      position: relative;
+      z-index: 1;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-location-container {
+      padding-bottom: 40px;
+    }
+
+    .footer-subscribe-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      padding-left: 0;
+    }
+
+    .subscribe-section {
+      width: 80%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .subscribe-text {
+      font-size: 12px;
+      line-height: 2.0;
+    }
+
+    form {
+      width: 35%;
+      margin-bottom: 40px;
+    }
+
+    form input[type="email"] {
+      height: 40px;
+    }
+
+    form input[type="text"] {
+      height: 40px;
+    }
+
+    form button[type="submit"] {
+      height: 40px;
+    }
+
+    .footer-socials-container a {
+      font-size: 20px;
+      margin: 0 20px;
+    }
+
+    .footer-legal p {
+      font-size: 10px;
+      width: 30%;
+    }
+
+    .footer-legal a {
+      font-size: 10px;
+    }
+
+  }
+
 
 @media all and (min-width: 480px) and (max-width: 767px) and (orientation: landscape) {
 
@@ -1649,6 +1739,103 @@ h1 {
 
     .dropdown1 {
         font-size: 20px;
+    }
+
+    .dropdown1 .dropdown-content a {
+        font-size: 16px;
+    }
+
+    .footer-location, .footer-contact, .footer-hours {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-location-container {
+      width: 100%;  
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flc-icon-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #flc-hours {
+      margin-right: 0;
+    }
+
+    .footer-location-container > * {
+      position: relative;
+      z-index: 1;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-location-container {
+      padding-bottom: 40px;
+    }
+
+        .footer-subscribe-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      padding-left: 0;
+    }
+
+    .subscribe-section {
+      width: 70%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .subscribe-text {
+      font-size: 12px;
+      line-height: 2.0;
+      width: 100%;
+    }
+
+    form {
+      width: 35%;
+      margin-bottom: 40px;
+    }
+
+    form input[type="email"] {
+      height: 40px;
+      width: 350px;
+    }
+
+    form input[type="text"] {
+      height: 40px;
+      width: 350px;
+    }
+
+    form button[type="submit"] {
+      height: 40px;
+      width: 350px;
+    }
+
+    .footer-socials-container a {
+      font-size: 20px;
+      margin: 0 30px;
+    }
+
+    .footer-legal p {
+      font-size: 12px;
+      width: 40%;
+    }
+
+    .footer-legal a {
+      font-size: 10px;
     }
 
 }
