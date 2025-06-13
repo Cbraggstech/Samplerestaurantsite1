@@ -1582,6 +1582,22 @@ h1 {
   }
 }
 
+/* Styling for menu nav dropdown button for smaller devices */
+
+.ss-dropdown-btn {
+  display: none;
+  width: 120px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #EC7B01;
+  color: #F6F5F2;
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+
 /* Media Queries 
 ------------------------------------------
 */
@@ -1715,7 +1731,50 @@ h1 {
     ---------------------------------------
     */
 
-    
+    .menu-header-container, .menu-header-container-sushi, .menu-header-container-sashimi, .menu-header-container-tempura, .menu-header-container-udon, .menu-header-container-lunch, .menu-header-container-dinner, .menu-header-container-drinks, .menu-header-container-desserts, .menu-header-container-happyhour {
+      height: 20vh;
+    }
+
+    .menu-header-title {
+      font-size: 24px;
+        }
+
+    .apps-menu-container {
+      display: inline-block;
+      position: relative;
+      left: auto;
+      width: auto;
+      height: auto;
+    }
+
+    .apps-menu-nav {
+      display: none;
+    }
+
+    .ss-dropdown-btn:hover + .apps-menu-nav {
+      display: block;
+    }
+
+    .ss-dropdown-btn {
+      display: inline-block;
+      margin-bottom: 20px;
+      
+    }
+
+    .apps-menu-container {
+      position: absolute;
+      z-index: 2;
+    }
+
+    .ss-dropdown-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+
 
   }
 
