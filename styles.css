@@ -1294,6 +1294,8 @@ h1 {
   cursor: pointer;
   font-weight: bold;
   width: 70%;
+  border: 2px solid #F6F5F2;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .reservation-form input[type=date], .reservation-form input[type=time] {
@@ -1907,6 +1909,56 @@ devices */
     font-size: 14px;
   }
 
+  /* Reservations Media Queries
+  ---------------------------------------
+  */
+
+  .reservations-container {
+    height: auto;
+    padding: 20px;
+    padding-top: 60px;
+  }
+
+  .reservations-divider-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .reservations-title {
+    font-size: 24px;
+    padding-top: 20px;
+  }
+
+  .reservations-main-text {
+    font-size: 14px;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .reservation-form {
+    width: 80%;
+    height: auto;
+    margin-top: 40px;
+  }
+
+  .reservation-form input[type="text"], .reservation-form input[type="email"],
+  .reservation-form input[type="tel"], .reservation-form button[type="submit"], .reservation-form input[type=date], .reservation-form input[type=time], .reservation-form input[type="number"] {
+    width: 100%;
+  }
+
+  .reservations-info {
+    width: 60%;
+    margin-bottom: 40px;
+  }  
+
+  /* Gallery Media Queries
+  ---------------------------------------
+  */
+
 }
 
 @media all and (min-width: 480px) and (max-width: 767px) and (orientation: landscape) {
@@ -2173,6 +2225,58 @@ devices */
     width: 90%;
     font-size: 14px;
   }
+
+  /* Reservations Media Queries
+  ---------------------------------------
+  */
+
+    .reservations-container {
+    height: auto;
+    padding: 20px;
+    padding-top: 60px;
+  }
+
+  .reservations-divider-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .reservations-title {
+    font-size: 28px;
+    padding-top: 20px;
+  }
+
+  .reservations-main-text {
+    font-size: 14px;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .reservation-form {
+    width: 70%;
+    height: auto;
+    margin-top: 40px;
+  }
+
+  .reservation-form input[type="text"], .reservation-form input[type="email"],
+  .reservation-form input[type="tel"], .reservation-form button[type="submit"], .reservation-form input[type=date], .reservation-form input[type=time], .reservation-form input[type="number"] {
+    width: 90%;
+  }
+
+  .reservations-info {
+    width: 50%;
+    margin-bottom: 40px;
+  }  
+
+  /* Gallery Media Queries 
+  ---------------------------------------
+  */
+
+
 
 }
 
