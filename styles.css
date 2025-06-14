@@ -1683,6 +1683,22 @@ devices */
     #flc-hours {
       margin-right: 0;
     }
+    #flc-location {
+      margin-right: 0;
+    }
+
+    .flc-icon {
+      margin-left: 20px;
+    }
+
+    .flc-icon, #flc-location, #flc-hours {
+      width: 50px;
+      height: 70px;
+    }
+
+    .footer-p-title {
+      font-size: 20px;
+    }
 
     .footer-location-container > * {
       position: relative;
@@ -1709,6 +1725,10 @@ devices */
       width: 80%;
       text-align: center;
       margin-bottom: 20px;
+    }
+
+    .subscribe-title {
+      font-size: 28px;
     }
 
     .subscribe-text {
@@ -1820,6 +1840,7 @@ devices */
       justify-content: center;
       align-items: center;
       width: 100%;
+      margin-top: 60px;
     }
 
     .menu-title {
