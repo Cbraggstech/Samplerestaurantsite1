@@ -58,3 +58,17 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 // End slideshow logic-----------------------------------------------
+
+// Toggle dropdown for menus on smaller device
+
+document.addEventListener('DOMContentLoaded', function() {
+  const dropdownBtn = document.querySelector('.ss-dropdown-btn');
+  const menuNav = document.querySelector('.apps-menu-nav');
+  
+  if (dropdownBtn && menuNav) {
+    dropdownBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      menuNav.classList.toggle('visible');
+    });
+  }
+});
