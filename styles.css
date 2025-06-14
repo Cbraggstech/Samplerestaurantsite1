@@ -1596,6 +1596,16 @@ h1 {
   font-weight: bold;
 }
 
+/* Keeps the menu nav bar from sitting left after adding dropdown for smaller
+devices */
+
+.ss-dropdown-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 
 
 /* Media Queries 
@@ -1758,7 +1768,6 @@ h1 {
     .ss-dropdown-btn {
       display: inline-block;
       margin-bottom: 20px;
-      
     }
 
     .apps-menu-container {
@@ -1766,14 +1775,13 @@ h1 {
       z-index: 2;
     }
 
-    .ss-dropdown-container {
+   .ss-dropdown-container {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       width: 100%;
     }
-
 
 
   }
