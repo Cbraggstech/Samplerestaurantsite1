@@ -1586,17 +1586,20 @@ h1 {
 
 .ss-dropdown-btn {
   display: none;
-  width: 120px;
-  height: 40px;
+  width: 150px;  /* Slightly wider button for better visibility */
+  height: 45px;  /* Taller button for better touch target */
   border-radius: 25px;
   background-color: #EC7B01;
   color: #F6F5F2;
   font-family: Lato, sans-serif;
-  font-size: 16px;
+  font-size: 18px; /* Slightly larger text */
   font-weight: bold;
   cursor: pointer;
   position: relative;
   z-index: 50;
+  margin: 0 auto;  /* Center horizontally */
+  text-align: center; /* Center text inside button */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3); /* Add subtle shadow for depth */
 }
 
 /* Keeps the menu nav bar from sitting left after adding dropdown for smaller
@@ -1609,6 +1612,8 @@ devices */
   align-items: center;
   position: relative;
   z-index: 40;
+  width: 100%;  /* Take full width of parent */
+  text-align: center;  /* Center contents */
 }
 
 
@@ -1786,6 +1791,7 @@ devices */
       text-align: center;
       pointer-events: auto;
       font-size: 16px;
+      color: #F6F5F2;
     }
 
     .ss-dropdown-btn {
