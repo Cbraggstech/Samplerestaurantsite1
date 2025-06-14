@@ -1616,6 +1616,11 @@ devices */
   text-align: center;  /* Center contents */
 }
 
+/* Styling for second set of images on about us page for me queries.*/
+
+.about-hero-img-mq {
+  display: none;
+}
 
 
 /* Media Queries 
@@ -1861,6 +1866,24 @@ devices */
 
     .footer-nav-divider {
       display: none;
+    }
+
+    .about-background-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .about-hero-img {
+      display: none;
+    }
+
+    .about-hero-img-mq {
+      display: block;
+      width: 80%;
+      height: auto;
+      margin-bottom: 20px;
     }
 
   }
