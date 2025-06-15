@@ -2017,7 +2017,51 @@ devices */
   ---------------------------------------
   */
 
-  
+  .locations-header {
+    width: 80%;
+  }
+
+  .locations-header h1 {
+    font-size: 24px;  
+  }
+
+  .locations-header p {
+    font-size: 14px;
+  }
+  .locations-main {
+    padding: 20px;
+    height: 100%;
+  }
+
+  .locations-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .location-card {
+    width: 90%;
+    height: auto;
+    margin: 20px 0;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .locations-header h1 {
+    font-size: 24px;
+  }
+
+  /* Contact Us Media Queries 
+  ---------------------------------------
+  */
+
+
 
 }
 
@@ -2392,7 +2436,51 @@ devices */
   ---------------------------------------
   */
 
+    .locations-header {
+    width: 80%;
+  }
 
+  .locations-header h1 {
+    font-size: 24px;  
+  }
+
+  .locations-header p {
+    font-size: 14px;
+  }
+  .locations-main {
+    padding: 20px;
+    height: 100%;
+  }
+
+  .locations-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .location-card {
+    width: 70%;
+    height: auto;
+    margin: 20px 0;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .locations-header h1 {
+    font-size: 24px;
+  }
+
+  /* Contact Us Media Queries
+  ---------------------------------------
+  */
+
+  
 
 }
 
