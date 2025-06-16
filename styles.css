@@ -3231,6 +3231,48 @@ devices */
   margin-bottom: 40px;
 }
 
+.carousel-section .carousel > article {
+  height: 400px;
+}
+
+.body-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .slideshow-container {
+    width: 60%;
+    height: 100%;
+    margin-top: 60px;
+  }
+
+  .slideshow-container img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  }
+
+  .prev, .next {
+    top: 40%;
+  }
+
+  .dot {
+    margin-bottom: 60px;
+  }
+
+  .locations-main {
+    height: 100%;
+  }
+
+  .locations-container {
+    margin-bottom: 40px;
+  }
+
+  .location-card {
+    margin-top: 40px;
+  }
+
 }
 
 @media all and (min-width: 1024px) and (max-width: 1279px) and (orientation: landscape) {
