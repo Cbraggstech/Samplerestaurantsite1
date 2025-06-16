@@ -3173,7 +3173,13 @@ devices */
   .nav-logo2 {
       width: 100px;
       height: auto;
+      padding-top: 20px;
   }
+
+  .carousel-section .carousel > article {
+  height: 360px;
+  width: 50%;
+}
 
 }
 
